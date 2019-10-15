@@ -1,7 +1,7 @@
 const todoData = [
-  { _id: 1, text: "take out trash", completed: true },
+  { _id: 1, text: "take out trash", completed: false },
   { _id: 2, text: "take out dog", completed: true },
-  { _id: 3, text: "give food to the dog", completed: true },
+  { _id: 3, text: "give food to the dog", completed: false },
   { _id: 4, text: "give food to the cat", completed: true },
   { _id: 5, text: "study coding", completed: true }
 ];

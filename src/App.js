@@ -5,7 +5,7 @@ import TaskManager from "./components/taskManager";
 function App() {
   return (
     <div className="App">
-      <h1>A To Do list with Hooks</h1>
+      <h1>A To Do List with Hooks</h1>
       <TaskManager />
     </div>
   );
