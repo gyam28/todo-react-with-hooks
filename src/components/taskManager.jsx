@@ -40,6 +40,9 @@ class TaskManager extends Component {
   render() {
     return (
       <div className="d-flex flex-column justify-content-start">
+        <div className="p-2 bd-highlight">
+          <AddNewTask onSubmit={this.handleSubmit} />
+        </div>
         <div className="p-2 bd-highlight ">
           <h2>To Do</h2>
           <ToDoComponent
@@ -54,9 +57,6 @@ class TaskManager extends Component {
             items={this.state.tasks.filter(task => task.completed === true)}
             onCheck={this.handleCheck}
           />
-        </div>
-        <div className="p-2 bd-highlight">
-          <AddNewTask onSubmit={this.handleSubmit} />
         </div>
       </div>
     );

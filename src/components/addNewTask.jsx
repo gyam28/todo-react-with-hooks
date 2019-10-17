@@ -15,12 +15,15 @@ const AddNewTask = ({ onSubmit }) => {
 
   return (
     <form onSubmit={e => localOnSubmit(e)}>
+      <h2>Got something new? ^-^ </h2>
       <input
         style={{
           backgroundColor: "#ddd",
           borderColor: "#bcc",
           borderRadius: "15px",
-          borderWidth: "2px"
+          borderWidth: "2px",
+          marginBottom: "30px",
+          marginRight: "5px"
         }}
         type="text"
         placeholder=" insert todo..."

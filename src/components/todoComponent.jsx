@@ -1,7 +1,7 @@
 import React from "react";
 
 const ToDoComponent = ({ items, onCheck }) => {
-  return (
+  return items.length !== 0 ? (
     <ul className="list-group">
       {items.map(item => (
         <li
@@ -30,6 +30,8 @@ const ToDoComponent = ({ items, onCheck }) => {
         </li>
       ))}
     </ul>
+  ) : (
+    <h3>Nothing in here...</h3>
   );
 };
 
